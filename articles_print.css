@@ -1,0 +1,40 @@
+/*--- Printer versions, just needs differences ---*/
+body {background-color:white; color:black; font-family:'Times New Roman',Times,serif; font-size:12px;}
+blockquote {font-size:.8em;margin-left:2em;margin-right:.5em}
+#maintable {border:none;}
+
+.dr1 {white-space: nowrap;}
+
+a {font-weight:100;}
+a:link, a:visited  {color:black; text-decoration:underline; text-line-style:dot-dot-dash;} /* links */
+a:link.il, a:visited.il ,
+.pp, a:link.pp, a:visited.pp {color:black; font-weight:100; text-line-style:dot-dot-dash;}
+a.printel:after { content: ' ' attr(href); font-size: 80%;} /* prints address after links, used on offsite resources */
+
+.bbdr {border:1px solid black; border-bottom:1px solid black;}
+.nsbt {border:none;}
+.ptbdrtbl1px {border-top: 1px solid black;}
+
+.navcolor {background-color:white; color:black;}
+.pbnw {background-color:white; color:black;} /*Print black & white*/
+
+.internalnav {background-color:white;}
+
+.jiboxt, .jiboxb {border-color:black;}
+.pbia {page-break-inside: avoid;}
+.cx3 {width:0%;}
+
+.yearunkn {}
+.yearnone {}
+
+/*--- Printer vs screen ---*/
+.cx3, .noprint {display: none;} /* removes element completely */
+.nodispprint {visibility:hidden} /* hides element, but still takes up space */
+.printonly {display: inline;}
+tr.printonly, td.printonly {display: block;}
+
+.m0px {min-height:0px}
+
+/* Main content column */
+#cocol {width:100%; padding-left:8px;}
+.coverbox, .p100pc {width:100%;}

@@ -1,0 +1,247 @@
+body {background-color:#000067; color:black; margin:auto;}
+blockquote {font-size:.8em; margin-left:2em; margin-right:.5em;}
+#maintable {margin:auto; margin-top:8px; margin-bottom:8px; max-width: 950px;}
+
+a {font-weight:400;}
+a:link {color:#000066;}   /* unvisited link */
+a:visited {color:#000066;} /* visited link */
+a:hover {/*background-color:#FFFFCC;*/ color:#AA0044;}  /* mouse over link */
+a:active {color: #660000;}  /* selected link */
+
+/*.il, a:link.il, a:visited.il {color:blue;} /* links to jump on same page, in some browsers display as used by default. #CC6600 */
+/*.pp, a:link.pp, a:visited.pp {color:#7E3517;} /* Presently published magazines */
+.pp, a:link.pp, a:visited.pp {color:#7E2217;} /* Presently published magazines */
+img > a:hover, .img > * img, a.img, a:link.img, a:visited.img, a:hover.img, a:active.img  { background-color:none; color:none; border: none; } /* dont highlight image-links, ect */
+
+img {border:0;}
+
+.navcolor {background-color:#669966; color:#000066;}
+#footer.navcolor {color:#000000;}
+.navbar {font-size:1em; font-family:helvetica,arial,sans-serif; color:#000066; margin:-.25em 0px 10px 0px; }
+.navbar2 {color:#000066; font-size:.9em; font-family:helvetica,arial,sans-serif; font-style:normal; margin:-.25em 0px 10px 0px; }
+.navbar li , .navbar2  li {margin-left: -1.5em;}
+.navbar > li:before, .navbar2 > li:before {content: "\00BB \0020"; color:yellow; font-weight:600;}
+.navbar > * a:hover, .navbar2 > * a:hover {background:none !important;}
+
+.sectiontitle {font-size:32px; font-weight:bold; font-family:veranda,helvetica,arial,sans-serif; text-align:center;}
+
+.internalnav {background-color:#f9f9f9; color:black; border:1px solid #aaaaaa; padding:5px; }
+.internalnav > tr > td {text-align:center;}
+
+.smcap, h1, h2, h3, h4, h5, h6 {font-variant:small-caps;}
+.nosmcap {font-variant:normal !important;}
+
+/* Main content column */
+#cocol {width:750px; padding-left:25px;}
+
+/*journal issue overview - related*/
+.yearbox {margin:-.5em 0px 0px 0px; padding:0px 0px 0px 20px; vertical-align: top; }
+.coverbox {padding:0px 0px 0px 20px; text-align: left;}
+
+.dr1 {white-space: nowrap;}
+.cx3 {width:100%;padding-right:30px;}
+:hover.dr1, .dr1 > * a:hover, .dr1 + * a:hover,li.dr1 > *:hover, 
+dr1 + a > a:hover {background: lightblue !important;} /* links in a hoverable data row should remain their background highlight color  */
+/*Fun: */
+a.printel:hover:after { content: ": " attr(href); font-size: 80%;} /* prints address after links, used on offsite resources */
+
+.neg1em {margin-left: -1em;} /* padding: -1em; */
+.neg15em {margin-left: -1.5em;} /* padding: -1.5em; */
+.neg2em {margin-left: -2em;} /* padding: -2em; */
+ul.artll > li, li.liimg {list-style: none; margin-left: -2.155em;}
+li.printel {list-style-type:circle}
+
+.jiboxt {border-top: 1px solid goldenrod; margin-top:-1px; overflow:visible;}
+.jiboxb {border-bottom: 1px solid goldenrod; margin-top:-1px; overflow:visible;}
+/*.jiboxb, .jiboxt {border: 1px solid transparent;  margin-top:-1px;}*/
+
+.nsbbox {border: 1px solid #669966;}
+.onsbb {border-bottom: 1px solid #669966;}
+.nsbt {border-left: 1px solid #669966; border-right: 1px solid #669966;}
+
+.m150px {min-height:150px;}
+.m200px {min-height:200px;}
+.m250px {min-height:250px;}
+.m300px {min-height:300px;}
+.m400px {min-height:400px;}
+.m450px {min-height:450px;}
+.m500px {min-height:500px;}
+.m600px {min-height:750px;}
+
+.mw250px {min-width:250px;}
+
+.q1e {font-size: .25em;}
+.q2e {font-size: .50em;}
+.q3e {font-size: .75em;}
+.em15 {font-size: 1.5em;}
+.em20 {font-size: 2.0em;}
+.em25 {font-size: 2.5em;}
+.em3 {font-size: 3.0em;}
+
+.col2 {column-count:2; -moz-column-count:2;}
+
+/*Simple colors*/
+.blk {color:black;}
+.gry {color:grey;}
+.wht {color:white;}
+
+/*journal yearnav-related*/
+.yearnone {color:SteelBlue;}
+.yearunkn {color:LightGrey;}
+
+/*--- Printer vs screen ---*/
+.printonly {display: none;} /* removes element completely, print stylesheet shows it */
+
+
+/******** Common.css ********
+for generic, single-line items
+*/
+
+/*generic alignments*/
+.lineL {text-align:left;}
+.lineR {text-align:right;}
+.lineC {text-align:center;}
+.vaT {vertical-align:top;}
+.vaC {vertical-align:middle;}
+.vaB {vertical-align:bottom;}
+.flL {float:left;}
+.flC {float:center;}
+.flR {float:right;}
+.clB {clear:both;}
+
+/* Item highlights & styles */
+.author, .editor {font-weight:bold}
+.artist {font-weight:bold}
+.album {font-style:italic}
+.magazine, .mag {font-style:italic}
+.movie {font-style:italic}
+.tvshow {font-style:italic}
+.book {font-style:italic}
+
+.b600 {font-weight:400;}
+
+.nodisc {list-style: none;}
+
+/* hilight award nominations, wins*/
+.hlwin {background-color:#7CFC00;}
+.hlnom {background-color:#FF5333;}
+.hlrsc {background-color:red;}
+.liwin {color:#7CFC00;}
+.linom {color:#FF5333;}
+.hlrsc {color:gold;}
+.ulwin {text-decoration:underline;color:#7CFC00;}
+.ulnom {text-decoration:underline;color:#FF5333;}
+.bwtns {border-top:1px solid goldenrod;}
+hr {background-color:goldenrod;}
+
+/* Font familys */
+.msp {font-family:monospace;}
+
+/*--- Printer vs screen ---*/
+.nodisp {visibility:hidden} /* hides element, but still takes up space */
+.noshow  {display: none;} /* treats like a code comment, noprint + printonly */
+
+/*Searchbox*/
+#artistresults > div {color:black; background-color: #FFFFFF; padding: 2px 6px 2px 6px;}
+#artistresults > div:hover {color:white; background-color: #3366CC;}
+#artistresults {position: absolute; background-color: #FFFFFF; text-align: left;}
+.bbr {border: 1px solid #000000;}
+
+/*article list related*/
+.lulm {margin:.5em 0px 1em -1.5em;}
+.lulm10 {margin:.5em 0px 1em -1em;}
+.mcat {margin-top:-.75em;margin-left:.25em;}
+
+/* generic margins, padding, & wrapping*/
+.mt0 {margin-top:0px;}
+.mt5 {margin-top:5px;}
+
+.mb0 {margin-bottom:0px;}
+.mb5 {margin-bottom:5px;}
+.mb10 {margin-bottom:10px;}
+
+.wsnw {white-space: nowrap;}
+
+.pl5 {padding-left:5px;}
+.pl10 {padding-left:10px;}
+.pl15 {padding-left:15px;}
+.pl25 {padding-left:25px;}
+
+.pr5 {padding-right:5px;}
+.pr15 {padding-right:15px;}
+.pr25 {padding-right:25px}
+
+/*HMP imports*/
+
+@media screen and (max-width: 950px) {    /* iPad-ish */
+	body {width:100%;}
+	#rsidebar {display: none;}
+	#cocol {padding-right: 25px;}
+	#sitetitle {font-size: 1.5em;}
+	#mainlogo {width:200px;}
+	/* smaller logo is active */
+	/*
+	#mainlogo {display: none;}
+	*/
+
+	.smonlybl {display: block !important;}
+	.smalloff {display: none !important;}
+	
+	.imgr75sm {width:75%}
+	
+	.flCsmall {float:none !important;margin: auto !important;}
+}
+
+@media screen and (max-width: 650px) {    /*  smaller */
+	#sitetitle {font-size: 1em;}
+	#toplisttable {width:100% !important;}
+	blockquote.topx {margin: 3px; width:80%;}
+	#cocol {padding-right: 10px; padding-left: 10px;}
+	.doveyeartable {max-width:100%;width:90% !important;}
+	#awdbwt {border-left:1px dotted grey; margin-left:10px;}
+
+	.smonlybl2 {display: block !important;}
+	.smalloff2 {display: none !important;}
+	
+	.imgr50sm {width:50%}
+	
+	.clBmicro {clear:both !important;}
+	.flLmicro {float:left !important;}
+	.flCmicro {float:none !important;}
+	.flRmicro {float:right !important;}
+	.microwidth100 {width:100%;}
+	.micromaxwidth100 {max-width:100%;}
+	
+	.micro75em {font-size: .75em;}
+	
+	.yearbox {padding:0px 0px 0px 10px; }
+	.flR {float:center !important; margin: auto  !important;}
+}
+
+@media screen and (max-width: 450px) {    /* even smaller */
+	.doveyeartable {max-width:100%;width:100% !important;}
+	/* navigation scheme changes, sitemap becomes key */
+	#mainnav {display: none !important;}
+	#micronav {display: block !important;}
+	#mainlogo {display: none !important;}
+	#awdbwt {border-left:none;}
+	
+	h2  {clear:both !important;}
+
+	#cvbox { float:center !important; margin-left: auto; margin-right: auto;}
+	#cocol  {position: relative; }
+	
+	.flLtnytny {float:left !important;}
+	.flNtnytny {float:none !important;}
+	.clBtnytny {clear:both !important;}
+	
+	.tnytnyonlybl {display: block !important;}
+	.tnytnyonlyoff {display: none !important;}
+	
+	.jicltnytny100 {width:100px;}
+	
+	.yearbox {padding:0px;}
+	
+	/*img {max-width:100%;}*/
+	
+}
