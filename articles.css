@@ -190,6 +190,7 @@ hr {background-color:goldenrod;}
 	.imgr75sm {width:75%}
 	
 	.flCsmall {float:none !important;margin: auto !important;}
+	.aMrlsmall {margin-left: auto !important; margin-right: auto !important;}
 }
 
 @media screen and (max-width: 650px) {    /*  smaller */
@@ -209,6 +210,7 @@ hr {background-color:goldenrod;}
 	.flLmicro {float:left !important;}
 	.flCmicro {float:none !important;}
 	.flRmicro {float:right !important;}
+	.aMrlmicro {margin-left: auto !important; margin-right: auto !important;}
 	.microwidth100 {width:100%;}
 	.micromaxwidth100 {max-width:100%;}
 	
@@ -234,8 +236,10 @@ hr {background-color:goldenrod;}
 	.flLtnytny {float:left !important;}
 	.flNtnytny {float:none !important;}
 	.clBtnytny {clear:both !important;}
+	.aMrltnytny {margin-left: auto !important; margin-right: auto !important;}
 	
 	.tnytnyonlybl {display: block !important;}
+	.tnytnyonlyin {display: inline !important;}
 	.tnytnyonlyoff {display: none !important;}
 	
 	.jicltnytny100 {width:100px;}
