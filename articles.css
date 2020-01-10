@@ -51,7 +51,7 @@ a.printel:hover:after { content: ": " attr(href); font-size: 80%;} /* prints add
 ul.artll > li, li.liimg {list-style: none; margin-left: -2.155em;}
 li.printel {list-style-type:circle}
 
-.jiboxt {border-top: 1px solid goldenrod; margin-top:-1px; overflow:visible;}
+.jiboxt {border-top: 1px solid goldenrod; margin-top:-1px; overflow:visible; clear:both;}
 .jiboxb {border-bottom: 1px solid goldenrod; margin-top:-1px; overflow:visible;}
 /*.jiboxb, .jiboxt {border: 1px solid transparent;  margin-top:-1px;}*/
 
@@ -79,6 +79,7 @@ li.printel {list-style-type:circle}
 .em3 {font-size: 3.0em;}
 
 .col2 {column-count:2; -moz-column-count:2;}
+.col3 {column-count:3; -moz-column-count:3;}
 
 /*Simple colors*/
 .blk {color:black;}
@@ -245,6 +246,8 @@ hr {background-color:goldenrod;}
 	.jicltnytny100 {width:100px;}
 	
 	.yearbox {padding:0px;}
+	
+	.col1tnytny {column-count:1 !important; -moz-column-count:1 !important;}
 	
 	/*img {max-width:100%;}*/
 	

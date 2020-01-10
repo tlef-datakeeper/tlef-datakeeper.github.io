@@ -21,8 +21,10 @@ a.printel:after { content: ' ' attr(href); font-size: 80%;} /* prints address af
 .internalnav {background-color:white;}
 
 .jiboxt, .jiboxb {border-color:black;}
-.pbia {page-break-inside: avoid;}
+.pbia {page-break-inside: avoid !important}
 .cx3 {width:0%;}
+
+/* .hlwin {background-color:lightgrey;} */
 
 .yearunkn {}
 .yearnone {}
