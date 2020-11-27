@@ -1,6 +1,6 @@
 body {background-color:#000067; color:black; margin:auto;}
-blockquote {font-size:.8em; margin-left:2em; margin-right:.5em;}
 #maintable {margin:auto; margin-top:8px; margin-bottom:8px; max-width: 950px;}
+blockquote {font-size:.8em; margin-left:2em; margin-right:.5em;}
 
 a {font-weight:400;}
 a:link {color:#000066;}   /* unvisited link */
@@ -25,20 +25,19 @@ img {border:0;}
 
 .sectiontitle {font-size:32px; font-weight:bold; font-family:veranda,helvetica,arial,sans-serif; text-align:center;}
 
-.internalnav {background-color:#f9f9f9; color:black; border:1px solid #aaaaaa; padding:5px; }
+.internalnav {background-color:#f9f9f9; color:black; border:1px solid #aaaaaa; padding:5px; margin: auto;}
 .internalnav > tr > td {text-align:center;}
 
-.smcap, h1, h2, h3, h4, h5, h6 {font-variant:small-caps;}
-.nosmcap {font-variant:normal !important;}
+
 
 /* Main content column */
 #cocol {width:750px; padding-left:25px;}
 
 /*journal issue overview - related*/
 .yearbox {margin:-.5em 0px 0px 0px; padding:0px 0px 0px 20px; vertical-align: top; }
-.coverbox {padding:0px 0px 0px 20px; text-align: left;}
+.coverbox {padding:0px 0px 0px 20px; text-align: left;}  /*DEP?*/
 
-.dr1 {white-space: nowrap;}
+/* .dr1 {white-space: nowrap;}*/
 .cx3 {width:100%;padding-right:30px;}
 :hover.dr1, .dr1 > * a:hover, .dr1 + * a:hover,li.dr1 > *:hover, 
 dr1 + a > a:hover {background: lightblue !important;} /* links in a hoverable data row should remain their background highlight color  */
@@ -73,10 +72,15 @@ li.printel {list-style-type:circle}
 .q1e {font-size: .25em;}
 .q2e {font-size: .50em;}
 .q3e {font-size: .75em;}
+.q80e {font-size: .80em;}
+.em10 {font-size: 1.0em;}
 .em15 {font-size: 1.5em;}
 .em20 {font-size: 2.0em;}
 .em25 {font-size: 2.5em;}
 .em3 {font-size: 3.0em;}
+.fs150 {font-size: 150%;}
+.smcap, h1, h2, h3, h4, h5, h6 {font-variant:small-caps;}
+.nosmcap {font-variant:normal !important;}
 
 .col2 {column-count:2; -moz-column-count:2;}
 .col3 {column-count:3; -moz-column-count:3;}
@@ -85,6 +89,7 @@ li.printel {list-style-type:circle}
 .blk {color:black;}
 .gry {color:grey;}
 .wht {color:white;}
+.red {color:red;}
 
 /*journal yearnav-related*/
 .yearnone {color:SteelBlue;}
@@ -92,7 +97,8 @@ li.printel {list-style-type:circle}
 
 /*--- Printer vs screen ---*/
 .printonly {display: none;} /* removes element completely, print stylesheet shows it */
-
+.nodisp {visibility:hidden !important;} /* hides element, but still takes up space */
+.noshow  {display: none !important;} /* treats like a code comment, noprint + printonly */
 
 /******** Common.css ********
 for generic, single-line items
@@ -109,6 +115,7 @@ for generic, single-line items
 .flC {float:center;}
 .flR {float:right;}
 .clB {clear:both;}
+.aMrl {margin-left: auto !important; margin-right: auto !important;}	
 
 /* Item highlights & styles */
 .author, .editor {font-weight:bold}
@@ -122,9 +129,12 @@ for generic, single-line items
 .b600 {font-weight:400;}
 
 .nodisc {list-style: none;}
+.llao {list-style: lao !important;}
+.dib {display: inline-block !important;}
 
 /* hilight award nominations, wins*/
-.hlwin {background-color:#7CFC00;}
+/*.hlwin {background-color:#7CFC00;}*/
+.hlwin:not(tr) {background-color:lightgreen;}
 .hlnom {background-color:#FF5333;}
 .hlrsc {background-color:red;}
 .liwin {color:#7CFC00;}
@@ -133,14 +143,36 @@ for generic, single-line items
 .ulwin {text-decoration:underline;color:#7CFC00;}
 .ulnom {text-decoration:underline;color:#FF5333;}
 .bwtns {border-top:1px solid goldenrod;}
+
 hr {background-color:goldenrod;}
+
+/* generic margins, padding, & wrapping*/
+.wsnw {white-space: nowrap;}
+
+.mb0 {margin-bottom:0px;}
+.mb5 {margin-bottom:5px;}
+.mb10 {margin-bottom:10px;}
+.mt0 {margin-top:0px;}
+.mt5 {margin-top:5px;}
+.ml25 {margin-left:25px;}
+
+.pl5 {padding-left:5px;}
+.pl10 {padding-left:10px;}
+.pl15 {padding-left:15px;}
+.pl20 {padding-left:20px;}
+.pl25 {padding-left:25px;}
+.pl30 {padding-left:30px;}
+
+.pr5 {padding-right:5px;}
+.pr10 {padding-right:10px;}
+.pr15 {padding-right:15px;}
+.pr25 {padding-right:25px;}
+.pr1em {padding-right:1em;}
 
 /* Font familys */
 .msp {font-family:monospace;}
 
-/*--- Printer vs screen ---*/
-.nodisp {visibility:hidden} /* hides element, but still takes up space */
-.noshow  {display: none;} /* treats like a code comment, noprint + printonly */
+
 
 /*Searchbox*/
 #artistresults > div {color:black; background-color: #FFFFFF; padding: 2px 6px 2px 6px;}
@@ -153,24 +185,8 @@ hr {background-color:goldenrod;}
 .lulm10 {margin:.5em 0px 1em -1em;}
 .mcat {margin-top:-.75em;margin-left:.25em;}
 
-/* generic margins, padding, & wrapping*/
-.mt0 {margin-top:0px;}
-.mt5 {margin-top:5px;}
 
-.mb0 {margin-bottom:0px;}
-.mb5 {margin-bottom:5px;}
-.mb10 {margin-bottom:10px;}
-
-.wsnw {white-space: nowrap;}
-
-.pl5 {padding-left:5px;}
-.pl10 {padding-left:10px;}
-.pl15 {padding-left:15px;}
-.pl25 {padding-left:25px;}
-
-.pr5 {padding-right:5px;}
-.pr15 {padding-right:15px;}
-.pr25 {padding-right:25px}
+h2:target  +div { color: black; transition: blue 0.5s ease;}
 
 /*HMP imports*/
 
@@ -219,20 +235,30 @@ hr {background-color:goldenrod;}
 	
 	.yearbox {padding:0px 0px 0px 10px; }
 	.flR {float:center !important; margin: auto  !important;}
+	
+	.acsWNtny * tr:nth-child(2n+0) {background-color:cornsilk;}
+	.acsWNtny * tr:nth-child(2n+1) {background-color:whitesmoke;}
+	.acsWNtny * tr:nth-child(1) {background-color:inherit;}
+	.acsWNtny * tr:nth-child(2).hlwin {background-color:lightgreen;}
+
 }
 
 @media screen and (max-width: 450px) {    /* even smaller */
+	blockquote {margin:0;}
 	.doveyeartable {max-width:100%;width:100% !important;}
+	.pw100tnytny {max-width:100%;width:100% !important;}
+	#cocol  {position: relative; padding:1px 1px 1px 1px !important;}
 	/* navigation scheme changes, sitemap becomes key */
 	#mainnav {display: none !important;}
 	#micronav {display: block !important;}
 	#mainlogo {display: none !important;}
 	#awdbwt {border-left:none;}
 	
+	.cx3 {width:0px;padding-right:0px;}
+	
 	h2  {clear:both !important;}
 
 	#cvbox { float:center !important; margin-left: auto; margin-right: auto;}
-	#cocol  {position: relative; }
 	
 	.flLtnytny {float:left !important;}
 	.flNtnytny {float:none !important;}
@@ -242,13 +268,31 @@ hr {background-color:goldenrod;}
 	.tnytnyonlybl {display: block !important;}
 	.tnytnyonlyin {display: inline !important;}
 	.tnytnyonlyoff {display: none !important;}
+	.dflwrtnytny {display: flow-root;}
 	
 	.jicltnytny100 {width:100px;}
+	.mw250px {max-width:100% !important;}
+	.mw100pttnytny  {max-width:100% !important;}
 	
 	.yearbox {padding:0px;}
+	.p0tnytny {padding:0px 0px 0px 0px !important;}
+	.pl10tnytny {padding-left:10px;}
+	.pl25tnytny {padding-left:25px;}
 	
 	.col1tnytny {column-count:1 !important; -moz-column-count:1 !important;}
 	
-	/*img {max-width:100%;}*/
+	.wsnotnytny{white-space: normal !important;}
 	
+	
+	/*img {max-width:100%;}*/
+	.wid100pctnytny {width:100%;}
+	
+	.neg1emtnytny {margin-left: -1em;}
+	.neg05emtnytny {margin-left: -.05em;}
+	
+}
+
+@media screen and (max-width: 360px) {    /* even smallerrrr */
+	.tnytnytnyonlyoff {display: none !important;}
+	.tnytnytnyonlyin {display: inline !important;}
 }

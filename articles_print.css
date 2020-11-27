@@ -1,7 +1,7 @@
 /*--- Printer versions, just needs differences ---*/
 body {background-color:white; color:black; font-family:'Times New Roman',Times,serif; font-size:12px;}
 blockquote {font-size:.8em;margin-left:2em;margin-right:.5em}
-#maintable {border:none;}
+#maintable {border:none; background-color:white; color:black;}
 
 .dr1 {white-space: nowrap;}
 
@@ -15,28 +15,30 @@ a.printel:after { content: ' ' attr(href); font-size: 80%;} /* prints address af
 .nsbt {border:none;}
 .ptbdrtbl1px {border-top: 1px solid black;}
 
-.navcolor {background-color:white; color:black;}
-.pbnw {background-color:white; color:black;} /*Print black & white*/
+.smcap, h1, h2, h3, h4, h5, h6,
+.pbnw {background-color:white; color:black !important;} /*Print black & white*/
 
 .internalnav {background-color:white;}
 
 .jiboxt, .jiboxb {border-color:black;}
-.pbia {page-break-inside: avoid !important}
+.pbia {page-break-inside: avoid !important;}
 .cx3 {width:0%;}
 
 /* .hlwin {background-color:lightgrey;} */
 
-.yearunkn {}
-.yearnone {}
+.wsnw {white-space: nowrap;}
+.m0px {min-height:0px}
+.col2pr {column-count:2 !important; -moz-column-count:2 !important;}
 
 /*--- Printer vs screen ---*/
 .cx3, .noprint {display: none;} /* removes element completely */
-.nodispprint {visibility:hidden} /* hides element, but still takes up space */
+.nodispprint {visibility: hidden;} /* hides element, but still takes up space */
 .printonly {display: inline;}
 tr.printonly, td.printonly {display: block;}
 
-.m0px {min-height:0px}
 
 /* Main content column */
-#cocol {width:100%; padding-left:8px;}
-.coverbox, .p100pc {width:100%;}
+#cocol {width: 100%; padding-left: 8px;}
+.coverbox, .p100pc {width: 100%;}
+.col2 {column-count:2; -moz-column-count:2;}
+.col3 {column-count:3; -moz-column-count:3;}
