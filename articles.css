@@ -29,7 +29,6 @@ img {border:0;}
 .internalnav > tr > td {text-align:center;}
 
 
-
 /* Main content column */
 #cocol {width:750px; padding-left:25px;}
 
@@ -48,7 +47,7 @@ a.printel:hover:after { content: ": " attr(href); font-size: 80%;} /* prints add
 .neg15em {margin-left: -1.5em;} /* padding: -1.5em; */
 .neg2em {margin-left: -2em;} /* padding: -2em; */
 ul.artll > li, li.liimg {list-style: none; margin-left: -2.155em;}
-li.printel {list-style-type:circle}
+li.printel {list-style-type:circle;}
 
 .jiboxt {border-top: 1px solid goldenrod; margin-top:-1px; overflow:visible; clear:both;}
 .jiboxb {border-bottom: 1px solid goldenrod; margin-top:-1px; overflow:visible;}
@@ -89,11 +88,19 @@ li.printel {list-style-type:circle}
 .blk {color:black;}
 .gry {color:grey;}
 .wht {color:white;}
-.red {color:red;}
+.red {color:red !important;}
+.pur {color:#c101ff !important;}
 
 /*journal yearnav-related*/
 .yearnone {color:SteelBlue;}
 .yearunkn {color:LightGrey;}
+
+.yd:nth-child(1n):before {content: " - "; font-family: initial;}
+div .yd:nth-child(1):before, div .nd:nth-child(1):before {content: "";}
+.nd:before {content: " - "; visibility:hidden;}
+.redstrike {text-decoration: line-through; text-decoration-color: red;}
+.redstrike:before {text-decoration: none !important;}
+
 
 /*--- Printer vs screen ---*/
 .printonly {display: none;} /* removes element completely, print stylesheet shows it */
@@ -118,19 +125,20 @@ for generic, single-line items
 .aMrl {margin-left: auto !important; margin-right: auto !important;}	
 
 /* Item highlights & styles */
-.author, .editor {font-weight:bold}
-.artist {font-weight:bold}
-.album {font-style:italic}
-.magazine, .mag {font-style:italic}
-.movie {font-style:italic}
-.tvshow {font-style:italic}
-.book {font-style:italic}
+.author, .editor {font-weight:bold;}
+.artist {font-weight:bold;}
+.album {font-style:italic;user-select:all;}
+.magazine, .mag {font-style:italic;user-select:all;}
+.movie {font-style:italic;}
+.tvshow {font-style:italic;}
+.book {font-style:italic;}
 
 .b600 {font-weight:400;}
 
 .nodisc {list-style: none;}
 .llao {list-style: lao !important;}
 .dib {display: inline-block !important;}
+.din {display: inline !important;}
 
 /* hilight award nominations, wins*/
 /*.hlwin {background-color:#7CFC00;}*/
@@ -162,16 +170,17 @@ hr {background-color:goldenrod;}
 .pl20 {padding-left:20px;}
 .pl25 {padding-left:25px;}
 .pl30 {padding-left:30px;}
+.pl1em {padding-left:1em;}
 
 .pr5 {padding-right:5px;}
 .pr10 {padding-right:10px;}
 .pr15 {padding-right:15px;}
 .pr25 {padding-right:25px;}
 .pr1em {padding-right:1em;}
+.pr2em {padding-right:2em;}
 
 /* Font familys */
 .msp {font-family:monospace;}
-
 
 
 /*Searchbox*/
@@ -233,7 +242,7 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 	
 	.micro75em {font-size: .75em;}
 	
-	.yearbox {padding:0px 0px 0px 10px; }
+	.yearbox {padding:0px 0px 0px 10px;}
 	.flR {float:center !important; margin: auto  !important;}
 	
 	.acsWNtny * tr:nth-child(2n+0) {background-color:cornsilk;}
@@ -244,6 +253,8 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 }
 
 @media screen and (max-width: 450px) {    /* even smaller */
+	#maintable {margin-top:0px;}
+	.navbar  li {padding-right:1.5em !important;}
 	blockquote {margin:0;}
 	.doveyeartable {max-width:100%;width:100% !important;}
 	.pw100tnytny {max-width:100%;width:100% !important;}
@@ -282,7 +293,7 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.col1tnytny {column-count:1 !important; -moz-column-count:1 !important;}
 	
 	.wsnotnytny{white-space: normal !important;}
-	
+	.smalltnytny {font-size: small;}
 	
 	/*img {max-width:100%;}*/
 	.wid100pctnytny {width:100%;}
