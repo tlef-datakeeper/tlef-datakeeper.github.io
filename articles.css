@@ -1,5 +1,8 @@
+:root {color-scheme: light dark;}
 body {background-color:#000067; color:black; margin:auto;}
 #maintable {margin:auto; margin-top:8px; margin-bottom:8px; max-width: 950px;}
+#pagehead {text-shadow: 3px 3px 8px white;}
+#cocol {width:750px; padding-left:25px;}
 blockquote {font-size:.8em; margin-left:2em; margin-right:.5em;}
 
 a {font-weight:400;}
@@ -8,29 +11,27 @@ a:visited {color:#000066;} /* visited link */
 a:hover {/*background-color:#FFFFCC;*/ color:#AA0044;}  /* mouse over link */
 a:active {color: #660000;}  /* selected link */
 
+
 /*.il, a:link.il, a:visited.il {color:blue;} /* links to jump on same page, in some browsers display as used by default. #CC6600 */
 /*.pp, a:link.pp, a:visited.pp {color:#7E3517;} /* Presently published magazines */
 .pp, a:link.pp, a:visited.pp {color:#7E2217;} /* Presently published magazines */
 img > a:hover, .img > * img, a.img, a:link.img, a:visited.img, a:hover.img, a:active.img  { background-color:none; color:none; border: none; } /* dont highlight image-links, ect */
 
 img {border:0;}
+/*img:hover {animation: unset; transform-style: preserve-3d; transform: scale(1.2); transition: transform 5s ease 5s !important;}*/
 
 .navcolor {background-color:#669966; color:#000066;}
 #footer.navcolor {color:#000000;}
+
 .navbar {font-size:1em; font-family:helvetica,arial,sans-serif; color:#000066; margin:-.25em 0px 10px 0px; }
-.navbar2 {color:#000066; font-size:.9em; font-family:helvetica,arial,sans-serif; font-style:normal; margin:-.25em 0px 10px 0px; }
-.navbar li , .navbar2  li {margin-left: -1.5em;}
-.navbar > li:before, .navbar2 > li:before {content: "\00BB \0020"; color:yellow; font-weight:600;}
-.navbar > * a:hover, .navbar2 > * a:hover {background:none !important;}
+.navbar li {margin-left: -1.5em;}
+.navbar > li:before {content: "\00BB \0020"; color:yellow; font-weight:600;}
+.navbar > * a:hover {background:none !important;}
 
 .sectiontitle {font-size:32px; font-weight:bold; font-family:veranda,helvetica,arial,sans-serif; text-align:center;}
 
 .internalnav {background-color:#f9f9f9; color:black; border:1px solid #aaaaaa; padding:5px; margin: auto;}
 .internalnav > tr > td {text-align:center;}
-
-
-/* Main content column */
-#cocol {width:750px; padding-left:25px;}
 
 /*journal issue overview - related*/
 .yearbox {margin:-.5em 0px 0px 0px; padding:0px 0px 0px 20px; vertical-align: top; }
@@ -43,20 +44,22 @@ dr1 + a > a:hover {background: lightblue !important;} /* links in a hoverable da
 /*Fun: */
 a.printel:hover:after { content: ": " attr(href); font-size: 80%;} /* prints address after links, used on offsite resources */
 
-.neg1em {margin-left: -1em;} /* padding: -1em; */
-.neg15em {margin-left: -1.5em;} /* padding: -1.5em; */
-.neg2em {margin-left: -2em;} /* padding: -2em; */
 ul.artll > li, li.liimg {list-style: none; margin-left: -2.155em;}
 li.printel {list-style-type:circle;}
+
+.hangingindent {padding-left:2.0em ;text-indent:-2.0em;}
 
 .jiboxt {border-top: 1px solid goldenrod; margin-top:-1px; overflow:visible; clear:both;}
 .jiboxb {border-bottom: 1px solid goldenrod; margin-top:-1px; overflow:visible;}
 /*.jiboxb, .jiboxt {border: 1px solid transparent;  margin-top:-1px;}*/
 
+p {text-align:justify; text-indent:1em;}
+
 .nsbbox {border: 1px solid #669966;}
 .onsbb {border-bottom: 1px solid #669966;}
 .nsbt {border-left: 1px solid #669966; border-right: 1px solid #669966;}
 
+.h000px {height:0px;}
 .m150px {min-height:150px;}
 .m200px {min-height:200px;}
 .m250px {min-height:250px;}
@@ -78,11 +81,19 @@ li.printel {list-style-type:circle;}
 .em25 {font-size: 2.5em;}
 .em3 {font-size: 3.0em;}
 .fs150 {font-size: 150%;}
+.fsxl {font-size:  x-large;}
+.fsx2 {font-size: xx-large;}
+
 .smcap, h1, h2, h3, h4, h5, h6 {font-variant:small-caps;}
 .nosmcap {font-variant:normal !important;}
+.allsmcap {font-variant: all-small-caps;}
+.smcaption {font: small-caption;}
+.msp {font-family: monospace;}
+.ssrf {font-family: sans-serif;}
 
 .col2 {column-count:2; -moz-column-count:2;}
 .col3 {column-count:3; -moz-column-count:3;}
+h1, h2 {column-span: all;}
 
 /*Simple colors*/
 .blk {color:black;}
@@ -90,17 +101,23 @@ li.printel {list-style-type:circle;}
 .wht {color:white;}
 .red {color:red !important;}
 .pur {color:#c101ff !important;}
+.redbg {background-color:red !important;}
 
 /*journal yearnav-related*/
 .yearnone {color:SteelBlue;}
 .yearunkn {color:LightGrey;}
 
 .yd:nth-child(1n):before {content: " - "; font-family: initial;}
-div .yd:nth-child(1):before, div .nd:nth-child(1):before {content: "";}
+.yd:nth-child(1):before, .nd:nth-child(1):before {content: ""; font-family: initial;}
+.fiverr > span:before {content: " - " !important;  font-family: initial;}
+span.yearunkn:not(.nodisp) + span.lnk:before {color:LightGrey; content: " - "; visibility: initial;}
+
 .nd:before {content: " - "; visibility:hidden;}
 .redstrike {text-decoration: line-through; text-decoration-color: red;}
-.redstrike:before {text-decoration: none !important;}
+.tdn, .redstrike:before {text-decoration: none !important;}
 
+.usa {user-select:all;}
+label, .usn {user-select:none;}
 
 /*--- Printer vs screen ---*/
 .printonly {display: none;} /* removes element completely, print stylesheet shows it */
@@ -115,6 +132,7 @@ for generic, single-line items
 .lineL {text-align:left;}
 .lineR {text-align:right;}
 .lineC {text-align:center;}
+.taJ {text-align: justify;}
 .vaT {vertical-align:top;}
 .vaC {vertical-align:middle;}
 .vaB {vertical-align:bottom;}
@@ -122,21 +140,22 @@ for generic, single-line items
 .flC {float:center;}
 .flR {float:right;}
 .clB {clear:both;}
-.aMrl {margin-left: auto !important; margin-right: auto !important;}	
+.aMrl {margin-left: auto !important; margin-right: auto !important;}
 
 /* Item highlights & styles */
 .author, .editor {font-weight:bold;}
 .artist {font-weight:bold;}
 .album {font-style:italic;user-select:all;}
 .magazine, .mag {font-style:italic;user-select:all;}
-.movie {font-style:italic;}
-.tvshow {font-style:italic;}
-.book {font-style:italic;}
+.movie {font-style:italic;user-select:all;}
+.tvshow {font-style:italic;user-select:all;}
+.book {font-style:italic;user-select:all;}
 
 .b600 {font-weight:400;}
 
 .nodisc {list-style: none;}
 .llao {list-style: lao !important;}
+.dbl {display: block !important;}
 .dib {display: inline-block !important;}
 .din {display: inline !important;}
 
@@ -144,10 +163,9 @@ for generic, single-line items
 /*.hlwin {background-color:#7CFC00;}*/
 .hlwin:not(tr) {background-color:lightgreen;}
 .hlnom {background-color:#FF5333;}
-.hlrsc {background-color:red;}
-.liwin {color:#7CFC00;}
+.hlrsc {background-color:red;color:gold;}
+.liwin {list-style-type: disclosure-closed;}
 .linom {color:#FF5333;}
-.hlrsc {color:gold;}
 .ulwin {text-decoration:underline;color:#7CFC00;}
 .ulnom {text-decoration:underline;color:#FF5333;}
 .bwtns {border-top:1px solid goldenrod;}
@@ -158,11 +176,24 @@ hr {background-color:goldenrod;}
 .wsnw {white-space: nowrap;}
 
 .mb0 {margin-bottom:0px;}
-.mb5 {margin-bottom:5px;}
+.mb5  {margin-bottom:5px;}
 .mb10 {margin-bottom:10px;}
+.mb2em {margin-bottom:2em;}
+
 .mt0 {margin-top:0px;}
 .mt5 {margin-top:5px;}
-.ml25 {margin-left:25px;}
+
+.ml25 {margin-left: 25px;}
+.mlem {margin-left:1em;}
+.neg1em {margin-left: -1em;} /* padding: -1em; */
+.neg15em {margin-left: -1.5em;} /* padding: -1.5em; */
+.neg2em {margin-left: -2em;} /* padding: -2em; */
+
+.lulm {margin:.5em 0px 1em -1.5em;}
+.lulm2 {margin:.5em 0px 1em -2em;}
+.lulm3 {margin:.5em 0px 1em -3em;}
+.lulm10 {margin:.5em 0px 1em -1em;}
+.mcat {margin-top:-.75em;margin-left:.25em;}
 
 .pl5 {padding-left:5px;}
 .pl10 {padding-left:10px;}
@@ -171,6 +202,8 @@ hr {background-color:goldenrod;}
 .pl25 {padding-left:25px;}
 .pl30 {padding-left:30px;}
 .pl1em {padding-left:1em;}
+.pl2em {padding-left:2em;}
+.pl1hem {padding-left:.5em;}
 
 .pr5 {padding-right:5px;}
 .pr10 {padding-right:10px;}
@@ -179,9 +212,12 @@ hr {background-color:goldenrod;}
 .pr1em {padding-right:1em;}
 .pr2em {padding-right:2em;}
 
-/* Font familys */
-.msp {font-family:monospace;}
+.pb1vh {padding-bottom:1vh;}
+.pb2vh {padding-bottom:2vh;}
+.pb15 {padding-bottom:15px;}
 
+.pt4vh {padding-top:4vh;}
+.pt15 {padding-top:15px;}
 
 /*Searchbox*/
 #artistresults > div {color:black; background-color: #FFFFFF; padding: 2px 6px 2px 6px;}
@@ -189,15 +225,54 @@ hr {background-color:goldenrod;}
 #artistresults {position: absolute; background-color: #FFFFFF; text-align: left;}
 .bbr {border: 1px solid #000000;}
 
-/*article list related*/
-.lulm {margin:.5em 0px 1em -1.5em;}
-.lulm10 {margin:.5em 0px 1em -1em;}
-.mcat {margin-top:-.75em;margin-left:.25em;}
-
-
-h2:target  +div { color: black; transition: blue 0.5s ease;}
+h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
+:target { color: black; transition: blue 0.5s ease;}
 
 /*HMP imports*/
+
+@media screen and (prefers-color-scheme:dark) { 
+	/* color-only changes */
+	body {background-color:#25282a; color:white; }
+	#pagehead {color: #d6d797; text-shadow: 10px 3px 20px inherit;}
+	.navtop {border-bottom: 1px solid orange;}
+	
+	#maintable {border:1px solid #25282a; background-color:#38444c;}
+	
+	a:link {color:#babaff;}   /* unvisited link */
+	a:visited {color:#babaff;} /* visited link */
+	a:hover {/*background-color:#FFFFCC;*/ color:#ff95c0;}  /* mouse over link */
+	a:active {color: #ffbc00;}  /* selected link */
+	.pp, a:link.pp, a:visited.pp {color:#c0df43;} /* Presently published magazines */
+	
+	.navcolor {background-color:#38444c; color:#000066;}
+	#footer.navcolor {color:inherit; border-top: 1px solid orange;}
+	
+	.navbar {color:#38444c;}
+	.internalnav {background-color:#3c3c3c; color:inherit;}
+	:target {color:#d6d797}
+	
+	h2:target  +table, h2:target  +div {color:inherit; transition: blue 0.5s ease;}
+	:target {color:inherit; transition: blue 0.5s ease;}
+	
+	:hover.dr1, .dr1 > * a:hover, .dr1 + * a:hover,li.dr1 > *:hover, 
+	dr1 + a > a:hover {background: #3c6876 !important;} /* links in a hoverable data row should remain their background highlight color  */
+
+	/*Simple colors*/
+	.blk {color:inherit;}
+
+	/* hilight award nominations, wins*/
+	/*.hlwin {background-color:#7CFC00;}*/
+	.hlwin:not(tr) {background-color:#377a3785; color:#efff00; font-weight: normal;}
+	.hlwin,.hlwin  * a {color:#efff00}
+	.hlnom {background-color:#b337205c;}
+	.hlrsc {background-color:red;color:gold;}
+	.ulwin {text-decoration:underline;color:#7CFC00;}
+	.ulnom {text-decoration:underline;color:#FF5333;}
+	.bwtns {border-top:1px solid goldenrod;}
+
+
+	/*p  {word-spacing:.5em}*/
+}
 
 @media screen and (max-width: 950px) {    /* iPad-ish */
 	body {width:100%;}
@@ -238,18 +313,29 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.flRmicro {float:right !important;}
 	.aMrlmicro {margin-left: auto !important; margin-right: auto !important;}
 	.microwidth100 {width:100%;}
-	.micromaxwidth100 {max-width:100%;}
-	
+	.micromaxwidth100 {max-width:100% !important;}
+	.p0tny {padding:0px 0px 0px 0px !important;}
+	.col2small {column-count:2 !important; -moz-column-count:2 !important;}
+	.col1small {column-count:1 !important; -moz-column-count:1 !important;}
 	.micro75em {font-size: .75em;}
 	
-	.yearbox {padding:0px 0px 0px 10px;}
+	/*.yearbox {padding:0px 0px 0px 10px;}*/
 	.flR {float:center !important; margin: auto  !important;}
 	
 	.acsWNtny * tr:nth-child(2n+0) {background-color:cornsilk;}
 	.acsWNtny * tr:nth-child(2n+1) {background-color:whitesmoke;}
 	.acsWNtny * tr:nth-child(1) {background-color:inherit;}
 	.acsWNtny * tr:nth-child(2).hlwin {background-color:lightgreen;}
-
+	
+	@media screen and (prefers-color-scheme:dark) { 
+		.acsWNtny * tr:nth-child(2n+0) {background-color:#702c1f5c;}
+		.acsWNtny * tr:nth-child(2n+1) {background-color:#70463e8a;}
+		.acsWNtny * tr:nth-child(1) {background-color:inherit;}
+		/*.acsWNtny * tr:nth-child(2).hlwin {background-color:#377a37;}*/
+		.acsWNtny * tr:nth-child(2).hlwin {background: linear-gradient(90deg, rgb(31 98 31) 0%, rgb(51 122 66) -0%, rgb(56 68 76) 100%);}
+	}
+	
+	.hangingindent {padding-left:1.0em !important; text-indent:-1.0em !important;}
 }
 
 @media screen and (max-width: 450px) {    /* even smaller */
@@ -257,7 +343,6 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.navbar  li {padding-right:1.5em !important;}
 	blockquote {margin:0;}
 	.doveyeartable {max-width:100%;width:100% !important;}
-	.pw100tnytny {max-width:100%;width:100% !important;}
 	#cocol  {position: relative; padding:1px 1px 1px 1px !important;}
 	/* navigation scheme changes, sitemap becomes key */
 	#mainnav {display: none !important;}
@@ -274,21 +359,33 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.flLtnytny {float:left !important;}
 	.flNtnytny {float:none !important;}
 	.clBtnytny {clear:both !important;}
-	.aMrltnytny {margin-left: auto !important; margin-right: auto !important;}
 	
 	.tnytnyonlybl {display: block !important;}
 	.tnytnyonlyin {display: inline !important;}
+	.tnytnyonlygr {display: grid !important;}
 	.tnytnyonlyoff {display: none !important;}
 	.dflwrtnytny {display: flow-root;}
+	.boldtnytny {font-weight:bold;}
 	
 	.jicltnytny100 {width:100px;}
-	.mw250px {max-width:100% !important;}
+	.vwtnytny100 {width:100vw;}
+	.wid100pctnytny {width:100%;}
 	.mw100pttnytny  {max-width:100% !important;}
+	.mwfctnytny {max-width: fit-content;}
+	.wfctnytny {width: fit-content !important;}
+	.mw250px {max-width:100% !important;}
+	.pw100tnytny {max-width:100%;width:100% !important;}
 	
-	.yearbox {padding:0px;}
+/*	.yearbox {padding:0px;}*/
 	.p0tnytny {padding:0px 0px 0px 0px !important;}
-	.pl10tnytny {padding-left:10px;}
 	.pl25tnytny {padding-left:25px;}
+	.pl10tnytny {padding-left:10px;}
+	.pl1vwtnytny {padding-left:1vw !important;}
+	.pl1emtnytny {padding-left:1em !important;}
+	.pt1vwtnytny {padding-top:1vw !important;}
+	.pb1emtnytny {padding-bottom:1em !important;}
+	.pb05emtnytny {padding-bottom:.5em !important;}
+	.pr3vwtnytny {padding-right:3vw !important;}
 	
 	.col1tnytny {column-count:1 !important; -moz-column-count:1 !important;}
 	
@@ -296,14 +393,89 @@ h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.smalltnytny {font-size: small;}
 	
 	/*img {max-width:100%;}*/
-	.wid100pctnytny {width:100%;}
 	
+	.hangingindent {padding-left:.5em !important; text-indent:-.5em !important;}
+	
+	.aMrltnytny {margin-left: auto !important; margin-right: auto !important;}
+	.mb0tnytny {margin-bottom:0px;}
+	.mb1tnytny {margin-bottom:1em;}
 	.neg1emtnytny {margin-left: -1em;}
 	.neg05emtnytny {margin-left: -.05em;}
 	
+	.fiverr > span:nth-child(1):before {content: "" !important;}
+	div.endyb {height: 0px;}
+	/*.cvhtnytny {content-visibility: hidden; display: none !important;}*/
 }
 
 @media screen and (max-width: 360px) {    /* even smallerrrr */
 	.tnytnytnyonlyoff {display: none !important;}
 	.tnytnytnyonlyin {display: inline !important;}
+	.col1tnytnytny {column-count:1 !important; -moz-column-count:1 !important;}
+}
+
+@media print {
+	/*--- Printer version, just needs differences ---*/
+	body {background-color:white; color:black; font-family:'Times New Roman',Times,serif; width:100%;}
+	blockquote {font-size:.8em;margin-left:2em;margin-right:.5em}
+	#maintable {border:none; background-color:white; color:black;}
+
+	.dr1 {white-space: nowrap;}
+
+	a {font-weight:100;}
+	a:link, a:visited  {color:black; text-decoration:underline; text-line-style:dot-dot-dash;} /* links */
+	a:link.il, a:visited.il ,
+	.pp, a:link.pp, a:visited.pp {color:black; font-weight:100; text-line-style:dot-dot-dash;}
+	a.printel:after { content: ' ' attr(href); font-size: 80%;} /* prints address after links, used on offsite resources */
+
+	.bbdr {border:1px solid black; border-bottom:1px solid black;}
+	.nsbt {border:none;}
+	.ptbdrtbl1px, .bwtns {border-top: 1px solid black;}
+
+	.smcap, h1, h2, h3, h4, h5, h6, hr,
+	.pbnw {background-color:white; color:black !important;} /*Print black & white*/
+
+	.internalnav {background-color:white;}
+
+	.jiboxt, .jiboxb {border-color:black;}
+	img, .pbia {page-break-inside: avoid !important;}
+	.pbaa {page-break-after: avoid !important; break-after:avoid-page;}
+	h1, h2, h3, h4, h5, h6 {page-break-after: avoid !important; break-after:avoid-page;}
+	.cx3 {width:0%;}
+
+	.hlwin {background-color:lightgrey !important; text-decoration:underline;}
+	.acsWNtny * tr:nth-child(2).hlwin {background-color:lightgrey;}
+
+	.wsnw {white-space: nowrap;}
+	.m0px {min-height:0px}
+	.col2pr {column-count:2 !important; -moz-column-count:2 !important;}
+	.col3pr {column-count:3 !important; -moz-column-count:3 !important;}
+	.col4pr {column-count:4 !important; -moz-column-count:4 !important;}
+	.mt0pr {margin-top:0 !important;}
+	.mt50pcempr {margin-top:.5em;}
+	.mt25pcempr {margin-top:.25em;}
+	.mb0pr {margin-bottom:0 !important;}
+	.mb1pr {margin-bottom:1mm !important;}
+	.pb0pr {padding-bottom:0 !important;}
+
+	/*--- Printer vs screen ---*/
+	.cx3, .noprint {display: none;} /* removes element completely */
+	.nodispprint {visibility: hidden;} /* hides element, but still takes up space */
+	.printonly {display: inline;}
+	tr.printonly, td.printonly {display: block;}
+
+
+	/* Main content column */
+	#cocol {width: 100%; padding-left: 8px;}
+	.coverbox, .p100pc {width: 100%;}
+	.col2 {column-count:2; -moz-column-count:2;}
+	.col3 {column-count:3; -moz-column-count:3;}
+	.lulm3pr {margin:.25em 0px 1em -3em;}
+	.lulm {margin:.25em 0px 1em -1.5em;}
+
+	@media print and (orientation: portrait) {
+		/*
+		.fiverr > span:nth-child(1):before {content: "" !important;}
+		*/
+		div.endyb {height: 0px;}
+	}
 }
