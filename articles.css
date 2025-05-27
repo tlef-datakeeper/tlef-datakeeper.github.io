@@ -303,6 +303,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	#awdbwt {border-left:1px dotted grey; margin-left:10px;}
 
 	.smonlybl2 {display: block !important;}
+	.smallyin2 {display: inline !important;}
 	.smalloff2 {display: none !important;}
 	
 	.imgr50sm {width:50%}
@@ -318,6 +319,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.col2small {column-count:2 !important; -moz-column-count:2 !important;}
 	.col1small {column-count:1 !important; -moz-column-count:1 !important;}
 	.micro75em {font-size: .75em;}
+	.micro50em {font-size: .5em;}
 	
 	/*.yearbox {padding:0px 0px 0px 10px;}*/
 	.flR {float:center !important; margin: auto  !important;}
@@ -391,6 +393,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	
 	.wsnotnytny{white-space: normal !important;}
 	.smalltnytny {font-size: small;}
+	.nodisctnytny {list-style: none;}
 	
 	/*img {max-width:100%;}*/
 	
@@ -401,6 +404,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.mb1tnytny {margin-bottom:1em;}
 	.neg1emtnytny {margin-left: -1em;}
 	.neg05emtnytny {margin-left: -.05em;}
+	.ml1hemtnytny {margin-left: .5em;}
 	
 	.fiverr > span:nth-child(1):before {content: "" !important;}
 	div.endyb {height: 0px;}
@@ -410,6 +414,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 @media screen and (max-width: 360px) {    /* even smallerrrr */
 	.tnytnytnyonlyoff {display: none !important;}
 	.tnytnytnyonlyin {display: inline !important;}
+	.tnytnytnyonlybl {display: block !important;}
 	.col1tnytnytny {column-count:1 !important; -moz-column-count:1 !important;}
 }
 
