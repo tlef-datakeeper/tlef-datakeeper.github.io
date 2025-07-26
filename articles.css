@@ -91,6 +91,8 @@ p {text-align:justify; text-indent:1em;}
 .msp {font-family: monospace;}
 .ssrf {font-family: sans-serif;}
 
+.ttu {text-transform: uppercase;}
+
 .col2 {column-count:2; -moz-column-count:2;}
 .col3 {column-count:3; -moz-column-count:3;}
 h1, h2 {column-span: all;}
@@ -155,9 +157,11 @@ for generic, single-line items
 
 .nodisc {list-style: none;}
 .llao {list-style: lao !important;}
+.lthai {list-style: thai !important;}
 .dbl {display: block !important;}
 .dib {display: inline-block !important;}
 .din {display: inline !important;}
+.dih {display: inherit !important;}
 
 /* hilight award nominations, wins*/
 /*.hlwin {background-color:#7CFC00;}*/
@@ -236,7 +240,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	#pagehead {color: #d6d797; text-shadow: 10px 3px 20px inherit;}
 	.navtop {border-bottom: 1px solid orange;}
 	
-	#maintable {border:1px solid #25282a; background-color:#38444c;}
+	#maintable {border:1px solid #25282a; background-color:#1d3245;}
 	
 	a:link {color:#babaff;}   /* unvisited link */
 	a:visited {color:#babaff;} /* visited link */
@@ -244,10 +248,12 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	a:active {color: #ffbc00;}  /* selected link */
 	.pp, a:link.pp, a:visited.pp {color:#c0df43;} /* Presently published magazines */
 	
+	/*.navcolor {background-color:#38444c; color:#000066;}*/
 	.navcolor {background-color:#38444c; color:#000066;}
 	#footer.navcolor {color:inherit; border-top: 1px solid orange;}
 	
-	.navbar {color:#38444c;}
+	/*.navbar {color:#38444c;}*/
+	.navbar {color:#2b3b47;}
 	.internalnav {background-color:#3c3c3c; color:inherit;}
 	:target {color:#d6d797}
 	
@@ -255,7 +261,7 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	:target {color:inherit; transition: blue 0.5s ease;}
 	
 	:hover.dr1, .dr1 > * a:hover, .dr1 + * a:hover,li.dr1 > *:hover, 
-	dr1 + a > a:hover {background: #3c6876 !important;} /* links in a hoverable data row should remain their background highlight color  */
+	dr1 + a > a:hover {background: #005c79 !important;} /* links in a hoverable data row should remain their background highlight color  */
 
 	/*Simple colors*/
 	.blk {color:inherit;}
@@ -467,7 +473,6 @@ h2:target  +table, h2:target  +div { color: black; transition: blue 0.5s ease;}
 	.nodispprint {visibility: hidden;} /* hides element, but still takes up space */
 	.printonly {display: inline;}
 	tr.printonly, td.printonly {display: block;}
-
 
 	/* Main content column */
 	#cocol {width: 100%; padding-left: 8px;}
